@@ -1,0 +1,60 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+// Variables
+$primary: #4CAF50;
+$secondary: #2196F3;
+$success: #8BC34A;
+$info: #00BCD4;
+$warning: #FFC107;
+$danger: #F44336;
+$light: #F5F5F5;
+$dark: #212121;
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom styles
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8fafc;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.table {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.product-card {
+    transition: transform 0.2s;
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.form-control:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+}
